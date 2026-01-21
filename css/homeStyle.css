@@ -757,7 +757,8 @@ footer h4{
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 856px) and (orientation: landscape) and (max-height: 500px){
+
     .navTitle{
         margin-top: 5%;
         height:15vh;
@@ -776,7 +777,7 @@ footer h4{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 1025px) and (min-height: 501px){
 
     li{
         font-size: 50px;
@@ -813,7 +814,7 @@ footer h4{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape){
+@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) and (min-height: 501px){
 
     #nav-menu{
         margin-top: 15px;
