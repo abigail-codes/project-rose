@@ -757,7 +757,7 @@ footer h4{
     }
 }
 
-@media (max-width: 915px) and (orientation: landscape){
+@media (max-width: 768px) and (orientation: landscape){
     .navTitle{
         margin-top: 5%;
         height:15vh;
