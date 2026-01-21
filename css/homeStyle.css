@@ -384,7 +384,7 @@ section p{
     top:17%;
     left: 21%;
     transform: rotate(-5deg);
-    z-index: 100;
+    z-index: 99;
 }
 
 #t2{
