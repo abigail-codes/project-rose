@@ -371,3 +371,37 @@ footer h4{
         width:40vw;
     }
 }
+
+@media (max-width: 915px) and (orientation: landscape){
+    .navTitle{
+        margin-top: 5%;
+        height:15vh;
+    }
+
+    #t1,#t2,#t3,#t4{
+        font-size: 12vh;
+    }
+
+    #t1{
+        top:15%;
+    }
+
+    #t3{
+        left:18%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    li{
+        font-size: 50px;
+        line-height: 3.0cm;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape){
+
+    #nav-menu{
+        margin-top: 15px;
+    }
+}

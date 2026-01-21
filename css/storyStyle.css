@@ -371,3 +371,18 @@ footer h4{
         width:40vw;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    li{
+        font-size: 50px;
+        line-height: 3.0cm;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape){
+
+    #nav-menu{
+        margin-top: 15px;
+    }
+}
