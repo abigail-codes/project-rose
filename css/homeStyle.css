@@ -470,12 +470,12 @@ footer h4{
     gap:50%;
 }
 
-.socials a{
-    transition: transform 0.3s ease;
-}
-
 .socials img{
     width: 3vw;
+}
+
+.socials a{
+    transition: transform 0.3s ease;
 }
 
 .socials a:hover{
@@ -777,7 +777,7 @@ footer h4{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) and (min-height: 501px){
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 501px){
 
     li{
         font-size: 50px;
@@ -814,7 +814,7 @@ footer h4{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape) and (min-height: 501px){
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-height: 501px){
 
     #nav-menu{
         margin-top: 15px;
