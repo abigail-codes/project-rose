@@ -439,7 +439,9 @@ footer h4{
 
     .page{
         width: 80vw;
-        top: -5vh;
+        top: 10vh; 
+        bottom: 0;
+        margin-top: 2vh;
     }
 
     .info button {
