@@ -171,12 +171,31 @@ li a:hover{
     transform: scale(1.05);
 }
 
-.temp{
-    position: relative;
-    font-size: 64px;
-    text-align: center;
-    color:#FFEFC2;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);;
+.pic{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap:3%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pic img{
+    width:21vw;
+    transition: transform 0.3s ease;
+}
+
+.pic img:hover{
+    transform: scale(1.05);
+}
+
+.locked{
+    pointer-events: none;
+    cursor:not-allowed;
+}
+
+.locked img:hover{
+    transform: none;
 }
 
 footer{
@@ -242,6 +261,8 @@ footer h4{
         height: 8vh;
         position: absolute;
         z-index: 100;
+        top: 0;
+        left: 0;
     }
 
     nav::before {
@@ -341,7 +362,7 @@ footer h4{
     }
 
     li{
-        font-size: 50px;
+        font-size: 24px;
         font-weight: bold;
     }
 
@@ -356,14 +377,19 @@ footer h4{
         transform: scale(1.05); 
     }
 
-    .temp{
-        font-size: 5vw;
+    .pic{
+        margin-top: 10vh;
         display: flex;
-        align-items: center;
         justify-content: center;
-        height:68vh;
+        gap:3%;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    
+
+    .pic img{
+        width:80vw;
+    }
+
     .footer-text{
         display: flex;
         flex-direction: row;
