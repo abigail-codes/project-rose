@@ -439,7 +439,7 @@ footer h4{
 
     .page{
         width: 80vw;
-        top: -28vh;
+        top: 10vh;
     }
 
     .info button {
@@ -493,6 +493,10 @@ footer h4{
     .navTitle{
         margin-top: 5%;
         height:15vh;
+    }
+
+    .page{
+        top:40%;
     }
 
 }
