@@ -298,7 +298,7 @@ footer h4{
     transform: scale(1.10);
 }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
 
     body{
         overflow-x: hidden;
@@ -439,7 +439,7 @@ footer h4{
 
     .page{
         width: 80vw;
-        top: -20vh;
+        top: -5vh;
     }
 
     .info button {
