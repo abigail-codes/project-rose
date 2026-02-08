@@ -1,3 +1,9 @@
+document.addEventListener('contextmenu', (e) => {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+}, false);
+
 document.addEventListener('DOMContentLoaded', () => {
     const scrollUpBtn = document.getElementById('scroll-up');
 

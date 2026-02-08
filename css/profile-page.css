@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .scroll-up {
     position: fixed;
     right: 3%;
@@ -421,33 +427,23 @@ footer h4{
     }
 
     .base{
-        width:100vw;
-        height: 58vh;
+        width: 120vw;
         margin-top:15vh;
-        margin-left: 0;
-        margin-bottom: 10%;
-        transform: rotate(90deg);
+        margin-left: -12%;
+        margin-bottom: 20%;
         overflow: hidden;
         position: relative;
+        transform: rotate(90deg);
+        transform-origin: center;
     }
 
     .page{
-        width: 45vh;
-        top: -13%;
+        width: 80vw;
+        top: -28vh;
     }
 
     .info button {
-        position: absolute;
-        top: 40vh;
-        background-color: transparent;
-        color: #FFEFC2;
-        text-shadow: 2px 2px 5px black;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 40px;
-        transition: transform 0.3s ease;
-        z-index: 100;
+        top:30vh;
     }
 
     .exit-right {

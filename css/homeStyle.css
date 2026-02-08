@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .scroll-up {
     position: fixed;
     right: 3%;

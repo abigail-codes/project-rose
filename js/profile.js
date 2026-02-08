@@ -1,3 +1,9 @@
+document.addEventListener('contextmenu', (e) => {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+}, false);
+
 document.addEventListener('DOMContentLoaded', () => {
     const scrollUpBtn = document.getElementById('scroll-up');
 
@@ -114,4 +120,17 @@ function changePage(direction) {
 }
 
 initProfile();
+
+window.addEventListener('resize', () => {
+    const displayImg = document.getElementById('display-page');
+
+    const currentChar = characterData.find(c => c.id === currentId);
+
+    if (currentChar && displayImg) {
+        const newSrc = getResponsiveImage(currentChar);
+        if (displayImg.src !== newSrc) {
+            displayImg.src = newSrc;
+        }
+    }
+});
 
