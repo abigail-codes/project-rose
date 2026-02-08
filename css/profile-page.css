@@ -296,6 +296,7 @@ footer h4{
 
     body{
         overflow-x: hidden;
+        
     }
 
     nav{
@@ -303,6 +304,8 @@ footer h4{
         height: 8vh;
         position: absolute;
         z-index: 100;
+        top: 0;
+        left: 0;
     }
 
     nav::before {
@@ -418,51 +421,24 @@ footer h4{
     }
 
     .base{
-        position:relative;
-        width: 60%;
-        height: 60%;
-        margin: 0 auto;
-        margin-top: -2%;
-        margin-bottom: -5%;
-        display: flex;
-        justify-content: center;
-        opacity: 60%;
+        width:100vw;
+        height: 58vh;
+        margin-top:15vh;
+        margin-left: 0;
+        margin-bottom: 10%;
+        transform: rotate(90deg);
+        overflow: hidden;
+        position: relative;
     }
 
     .page{
-        position: absolute;
-        width: 58%;
-        top: 17%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto; 
-        z-index: 10;
-        transition: transform 0.4s ease, opacity 0.4s ease;
-        opacity: 1;
-    }
-
-    .exit-right {
-        opacity: 0;
-        transform: translate(20%, 0%); 
-    }
-    .exit-left {
-        opacity: 0;
-        transform: translate(-20%, 0%); 
-    }
-
-    .enter-from-left {
-        opacity: 0;
-        transform: translate(-20%, 0%);
-    }
-    .enter-from-right {
-        opacity: 0;
-        transform: translate(32%, 0%);
+        width: 45vh;
+        top: -13%;
     }
 
     .info button {
         position: absolute;
-        top: 50%;
+        top: 40vh;
         background-color: transparent;
         color: #FFEFC2;
         text-shadow: 2px 2px 5px black;
@@ -474,16 +450,30 @@ footer h4{
         z-index: 100;
     }
 
-    button:hover {
-        transform: scale(1.2);
+    .exit-right {
+        opacity: 0;
+        transform: translate(10%, 0%); 
+    }
+    .exit-left {
+        opacity: 0;
+        transform: translate(-10%, 0%); 
+    }
+
+    .enter-from-left {
+        opacity: 0;
+        transform: translate(-10%, 0%);
+    }
+    .enter-from-right {
+        opacity: 0;
+        transform: translate(10%, 0%);
     }
 
     .prev {
-        left: 15%;
+        left: 3%;
     }
 
     .next {
-        right: 15%;
+        right: 3%;
     }
 
     .footer-text{

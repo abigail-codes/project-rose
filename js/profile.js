@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const characterData = [
-    { id: 1, infoImage: "./img/alice info.png", unlocked: true },
-    { id: 2, infoImage: "./img/benedict info.png", unlocked: true },
+    { id: 1, infoImage: "./img/alice info.png", mobileImg:"./img/alice info hz.png",unlocked: true },
+    { id: 2, infoImage: "./img/benedict info.png", mobileImg:"./img/benedict info hz.png", unlocked: true },
     { id: 3, infoImage: "./img/locked.png", unlocked: false },
     { id: 4, infoImage: "./img/locked.png", unlocked: false },
     { id: 5, infoImage: "./img/locked.png", unlocked: false },
@@ -51,14 +51,28 @@ let currentId=1;
 function initProfile() {
     const params = new URLSearchParams(window.location.search);
     const charIdFromUrl = parseInt(params.get('char'));
+    const displayImg = document.getElementById('display-page');
+
+    let selectedChar;
 
     if (charIdFromUrl) {
-        const selectedChar = characterData.find(c => c.id === charIdFromUrl);
-        if (selectedChar && selectedChar.unlocked) {
-            currentId = charIdFromUrl;
-            document.getElementById('display-page').src = selectedChar.infoImage;
-        }
+        selectedChar = characterData.find(c => c.id === charIdFromUrl);
     }
+
+    if (!selectedChar || !selectedChar.unlocked) {
+        selectedChar = characterData[0];
+    }
+
+    currentId = selectedChar.id;
+    displayImg.src = getResponsiveImage(selectedChar);
+}
+
+function getResponsiveImage(character) {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile && character.mobileImg) {
+        return character.mobileImg;
+    }
+    return character.infoImage;
 }
 
 function changePage(direction) {
@@ -81,9 +95,10 @@ function changePage(direction) {
         } while (!characterData[nextIndex].unlocked); 
         
         const nextChar = characterData[nextIndex];
+        displayImg.src = getResponsiveImage(nextChar);
         currentId = nextChar.id;
+
         displayImg.style.transition = 'none';
-        displayImg.src = nextChar.infoImage;
         displayImg.classList.remove('exit-left', 'exit-right');
 
         if (direction === 1) {

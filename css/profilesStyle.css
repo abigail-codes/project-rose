@@ -441,6 +441,10 @@ footer h4{
         line-height: 3.0cm;
     }
 
+    .pic img{
+        width:30vw;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (min-height: 501px){
