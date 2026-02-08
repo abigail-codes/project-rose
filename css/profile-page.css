@@ -439,7 +439,7 @@ footer h4{
 
     .page{
         width: 80vw;
-        top: 10vh;
+        top: 20vh;
     }
 
     .info button {
@@ -506,6 +506,10 @@ footer h4{
     li{
         font-size: 50px;
         line-height: 3.0cm;
+    }
+
+    .page{
+        top:0vh;
     }
 
 }
