@@ -64,13 +64,13 @@ nav::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #B27E35;
+  background-color: #673c01;
   opacity: 25%;
   z-index: 0;
 }
 
 .active{
-    color:#A00E0E;
+    color:#de0202;
 }
 
 .burger {
@@ -177,12 +177,87 @@ li a:hover{
     transform: scale(1.05);
 }
 
-.temp{
-    position: relative;
+.background{
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 150vh;
+    background-image: url("../img/world.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.background h1{
+    font-family: "Jim Nightshade";
+    color: white;
+    font-weight: lighter;
     font-size: 64px;
-    text-align: center;
-    color:#FFEFC2;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);;
+    text-shadow: 1px 1px 5px #FFEFC2;
+    z-index: 80;
+}
+
+.background a{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.background a:hover{
+    transform: scale(1.05);
+}
+
+.power, .blackrose, .police, .map, .country, .symbolism {
+    position: absolute;
+    display: inline-block;
+}
+
+.power{
+    top:15vh;
+    left:20vw;
+}
+
+.blackrose{
+    top:12vh;
+    left:75vw;
+}
+
+.police{
+    top:60vh;
+    left:8vw;
+}
+
+.map{
+    top:55vh;
+    left:55vw;
+}
+
+.country{
+    top:110vh;
+    left:10vw;
+}
+
+.symbolism{
+    top:100vh;
+    left:65vw;
+}
+
+.alert{
+    position: absolute;
+    top: 60px;     
+    right: -10px;   
+    background-color: #A00E0E;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 footer{
@@ -194,7 +269,7 @@ footer{
 }
 
 .line{
-    margin: 5% 0% 5% 0%;
+    margin: 136vh 0% 5% 0%;
     height:1px;
     background-color: white;
 }
@@ -252,14 +327,6 @@ footer h4{
 
     nav::before {
         width: 100%;
-    }
-
-    .bg{
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        z-index: 1;
     }
 
     .burger {
