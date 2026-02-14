@@ -322,6 +322,7 @@ footer h4{
         width: 100%;
         height: 8vh;
         position: absolute;
+        top:0;
         z-index: 100;
     }
 
@@ -429,14 +430,65 @@ footer h4{
         transform: scale(1.05); 
     }
 
-    .temp{
-        font-size: 5vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height:68vh;
+    .background{
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/world hz.png");
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+
+    .background h1{
+        font-size: 32px;
+    }
+
+
+    .power, .blackrose, .police, .map, .country, .symbolism {
+        position: absolute;
+        display: inline-block;
+    }
+
+    .power{
+        top:5vh;
+        left:7vw;
+    }
+
+    .blackrose{
+        top:38vh;
+        left:70vw;
+    }
+
+    .police{
+        top:38vh;
+        left:8vw;
+    }
+
+    .map{
+        top:20vh;
+        left:55vw;
+    }
+
+    .country{
+        top:55vh;
+        left:12vw;
+    }
+
+    .symbolism{
+        top:8vh;
+        left:60vw;
+    }
+
+    .alert{
+        top: 20px;     
     }
     
+    .line{
+        margin-top: 70vh;
+    }
+
     .footer-text{
         display: flex;
         flex-direction: row;
@@ -460,6 +512,31 @@ footer h4{
         height:15vh;
     }
 
+     .background{
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/world.png");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+
+    .background h1{
+        font-size: 32px;
+    }
+
+
+    .power, .blackrose, .police, .map, .country, .symbolism {
+        position: absolute;
+        display: inline-block;
+    }
+    
+    .line{
+        margin-top: 100vh;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 501px) and (orientation: portrait){
@@ -467,6 +544,17 @@ footer h4{
     li{
         font-size: 50px;
         line-height: 3.0cm;
+    }
+
+    .background{
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/world hz.png");
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 2;
     }
 
 }
@@ -484,5 +572,30 @@ footer h4{
 
     #nav-menu{
         margin-top: 15px;
+    }
+
+     .background{
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/world.png");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+
+    .background h1{
+        font-size: 32px;
+    }
+
+
+    .power, .blackrose, .police, .map, .country, .symbolism {
+        position: absolute;
+        display: inline-block;
+    }
+    
+    .line{
+        margin-top: 100vh;
     }
 }
