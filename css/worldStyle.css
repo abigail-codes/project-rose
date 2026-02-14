@@ -523,6 +523,8 @@ footer h4{
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 2;
+        -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
     }
 
     .background h1{
@@ -535,12 +537,12 @@ footer h4{
     }
 
     .power{
-        top:10vh;
+        top:15vh;
         left:28vw;
     }
 
     .blackrose{
-        top:13vh;
+        top:18vh;
         left:73vw;
     }
 
