@@ -439,10 +439,12 @@ footer h4{
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 2;
+        -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
     }
 
     .background h1{
-        font-size: 32px;
+        font-size: 5vh;
     }
 
 
@@ -524,17 +526,46 @@ footer h4{
     }
 
     .background h1{
-        font-size: 32px;
+        font-size: 5vh;
     }
-
 
     .power, .blackrose, .police, .map, .country, .symbolism {
         position: absolute;
         display: inline-block;
     }
-    
+
+    .power{
+        top:10vh;
+        left:28vw;
+    }
+
+    .blackrose{
+        top:13vh;
+        left:73vw;
+    }
+
+    .police{
+        top:35vh;
+        left:11vw;
+    }
+
+    .map{
+        top:40vh;
+        left:58vw;
+    }
+
+    .country{
+        top:70vh;
+        left:18vw;
+    }
+
+    .symbolism{
+        top:80vh;
+        left:68vw;
+    }
+
     .line{
-        margin-top: 100vh;
+        margin-top: 70vh;
     }
 
 }
@@ -552,7 +583,7 @@ footer h4{
         height: 100vh;
         background-image: url("../img/world hz.png");
         background-position: top;
-        background-size: contain;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         z-index: 2;
     }
@@ -586,9 +617,8 @@ footer h4{
     }
 
     .background h1{
-        font-size: 32px;
+        font-size: 64px;
     }
-
 
     .power, .blackrose, .police, .map, .country, .symbolism {
         position: absolute;
