@@ -517,7 +517,7 @@ footer h4{
      .background{
         top:0;
         width: 100vw;
-        height: 100vh;
+        height: 120vh;
         background-image: url("../img/world.png");
         background-position: top;
         background-size: cover;
@@ -567,7 +567,7 @@ footer h4{
     }
 
     .line{
-        margin-top: 100vh;
+        margin-top: 120vh;
     }
 
 }
