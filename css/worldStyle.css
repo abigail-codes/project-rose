@@ -433,10 +433,10 @@ footer h4{
     .background{
         top:0;
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
         background-image: url("../img/world hz.png");
         background-position: top;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         z-index: 2;
         -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
@@ -488,7 +488,7 @@ footer h4{
     }
     
     .line{
-        margin-top: 70vh;
+        margin-top: 80vh;
     }
 
     .footer-text{
@@ -526,7 +526,7 @@ footer h4{
     }
 
     .background h1{
-        font-size: 5vh;
+        font-size: 32px;
     }
 
     .power, .blackrose, .police, .map, .country, .symbolism {
@@ -565,7 +565,7 @@ footer h4{
     }
 
     .line{
-        margin-top: 70vh;
+        margin-top: 100vh;
     }
 
 }
