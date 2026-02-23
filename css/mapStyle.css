@@ -579,4 +579,39 @@ footer h4{
     #nav-menu{
         margin-top: 15px;
     }
+
+    .pulse-circle1{
+        top:50vh;
+        left:38vw;
+    }
+
+    .pulse-circle2{
+        top:62vh;
+        left:80vw;
+    }
+
+    .pulse-circle3{
+        top:78vh;
+        left:48vw;
+    }
+
+    .pulse-circle4{
+        top:93vh;
+        left:39vw;
+    }
+
+    .pulse-circle5{
+        top:123vh;
+        left:33vw;
+    }
+
+    .pulse-circle6{
+        top:110vh;
+        left:50vw;
+    }
+
+    .pulse-circle7{
+        top:125vh;
+        left:70vw;
+    }
 }
