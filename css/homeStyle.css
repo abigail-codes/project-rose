@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -85,7 +85,7 @@ li a {
     display: block;
     z-index: 110;
     margin-top: 24px;
-    margin-left: 347px;
+    margin-left: 85%;
 }
 
 .burger input { 
@@ -146,7 +146,6 @@ li a {
     justify-content:center;
     align-items: center;
     width: 100%;
-    color:#5A4200;
 }
 
 .cta{
@@ -155,6 +154,7 @@ li a {
     border-radius: 15px;
     background: #FFFFFF;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    color: #5A4200;
 }
 
 #hero {
